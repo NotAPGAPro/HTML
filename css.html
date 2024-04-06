@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Specificity and Cascade Example</title>
+    <style>
+      /* This CSS rule sets the text color of all paragraphs to blue */
+      p {
+        color: blue;
+      }
+
+      /* This CSS rule is more specific because it targets a paragraph with an id */
+      p#specialParagraph {
+        color: red;
+      }
+
+      /* This CSS rule targets the same id, but is defined later, so it overrides the previous one */
+      p#specialParagraph {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to My Web Page</h1>
+    <p>This is a regular paragraph.</p>
+    <p id="specialParagraph">
+      This is a special paragraph with overridden styles.
+    </p>
+  </body>
+</html>
